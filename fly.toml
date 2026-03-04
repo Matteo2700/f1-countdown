@@ -1,0 +1,13 @@
+app = "f1-countdown"  # puoi cambiare il nome
+primary_region = "fra"    # Europa, esempio Francoforte
+
+[build]
+  image = "node:20"       # Node 20 LTS
+
+[[services]]
+  internal_port = 3000    # serve solo a Fly, il bot non usa HTTP
+  protocol = "tcp"
+  [services.concurrency]
+    type = "connections"
+    soft_limit = 25
+    hard_limit = 50
