@@ -1,0 +1,10 @@
+{
+  "name": "f1-countdown",
+  "version": "1.0.0",
+  "description": "F1 Discord Countdown Bot",
+  "main": "bot.js",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
